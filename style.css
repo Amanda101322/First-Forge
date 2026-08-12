@@ -15,7 +15,9 @@ body {
     background-color: rgba(235, 243, 246, 0.9);
 }
 
+
 .logo {
+
     font-family: "Cormorant Garamond", serif;
     font-size: 30px;
     font-weight: 600;
@@ -93,7 +95,6 @@ body {
     font-size: 30px;
     margin-top: 35px;
     margin-bottom: 5px;
-    margin-bottom: 5px;
 }
 
 .forge-note {
@@ -103,7 +104,3 @@ body {
     text-transform: uppercase;
     color: #5F6664;
 }
-
-
-
-   

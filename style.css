@@ -1,44 +1,46 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
 body {
-    background-color: #f0f4f8;
-    color: #0a192f;
-    font-family: 'Arima', system-ui;
+    margin: 0;
+    background-color: #EBF3F6;
+    color: #222222;
+    font-family: "Lora", serif;
 }
 
-h1, h2, h3, .logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-}
-
-header {
+.site-header {
+    height: 70px;
+    padding: 0 5%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e2e8f0;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.12);
+    background-color: rgba(235, 243, 246, 0.9);
 }
 
 .logo {
-    font-size: 1.8rem;
-    letter-spacing: 0,5px;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
-
-header nav a {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #222222;
     text-decoration: none;
-    color: #0a192f;
-    font-family: 'Arima', system-ui;
-    font-size: 1rem;
-    font-weight: 500;
+}
+
+.logo span {
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }

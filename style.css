@@ -44,3 +44,66 @@ body {
     text-decoration: underline;
     text-underline-offset: 6px;
 }
+
+.hero {
+    min-height: 650px;
+    padding: 80px 8%;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.hero-note {
+    max-width: 380px;
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(70px, 9vw, 130px);
+    font-weight: 500;
+    line-height: 0.85;
+    margin: 0;
+}
+
+.hero h1 span {
+    display: block;
+    font-style: italic;
+}
+
+.intro {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 45px;
+}
+
+.hero-description {
+    max-width: 500px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.handwritten {
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.forge-note {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5F6664;
+}
+
+
+
+   

@@ -49,11 +49,12 @@ body {
 
 .hero {
     min-height: 650px;
-    padding: 80px 8%;
+    padding: 45px 6% 70px;
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 0.9fr 1.1fr;
     align-items: center;
-    gap: 80px;
+    gap: 20px;
+    overflow: hidden;
 }
 
 .hero-note {
@@ -66,10 +67,11 @@ body {
 
 .hero h1 {
     font-family: "Cormorant Garamond", serif;
-    font-size: clamp(70px, 9vw, 130px);
+    font-size: clamp(58px, 6.5vw, 92px);
     font-weight: 500;
-    line-height: 0.85;
+    line-height: 0.88;
     margin: 0;
+    letter-spacing: -0.03em;
 }
 
 .hero h1 span {
@@ -105,14 +107,20 @@ body {
     color: #5F6664;
 }
 .hero-visual {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 560px;
+    overflow: visible;
 }
 
 .hero-image {
-    width: 100%;
-    max-width: 720px;
+    width: 700px;
+    max-width: 120%;
     height: auto;
     display: block;
+    object-fit: contain;
+    transform: rotate(0.5deg);
+    filter: drop-shadow(0 12px 18px rgba(34, 34, 34, 0.08));
 }

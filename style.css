@@ -108,6 +108,9 @@ body {
     font-family: "Caveat", cursive;
     font-size: 30px;
     margin: 34px 0 5px;
+    transform: rotate(-2deg);
+    transform-origin: left center;
+    width: fit-content;
 }
 
 .forge-note {

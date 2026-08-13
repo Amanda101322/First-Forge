@@ -48,9 +48,11 @@ body {
     font-size: 13px;
     color: #222222;
     text-decoration: none;
+    transition: opacity 0.2s ease;
 }
 
 .navigation a:hover {
+    opacity: 0.6;
     text-decoration: underline;
     text-underline-offset: 6px;
 }

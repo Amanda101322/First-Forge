@@ -11,8 +11,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(34, 34, 34, 0.12);
-    background-color: rgba(235, 243, 246, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.10);
+    background-color: rgba(235, 243, 246, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-sizing: border-box;
 }
 
 
@@ -32,10 +38,12 @@ body {
 
 .navigation {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
 .navigation a {
+    position: relative;
     font-family: "DM Sans", sans-serif;
     font-size: 13px;
     color: #222222;

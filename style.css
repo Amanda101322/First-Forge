@@ -105,84 +105,14 @@ body {
     color: #5F6664;
 }
 .hero-visual {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.paper-backdrop {
-    position: absolute;
-    width: 430px;
-    height: 430px;
-    background-color: #F8F7F1;
-    border-radius: 48% 52% 50% 47% / 51% 46% 51% 46% 54% 49%;
-    transform: rotate(-4deg);
-    box-shadow: 0 12px 25px rgba(34, 34, 34, 0.08);
-    clip-path: polygon(
-        3% 8%,
-        10% 5%,
-        18% 7%,
-        27% 4%,
-        36% 6%,
-        45% 3%,
-        55% 6%,
-        64% 4%,
-        73% 7%,
-        82% 5%,
-        91% 9%,
-        96% 17%,
-        94% 47%,
-        97% 37%,
-        94% 47%,
-        97% 57%,
-        94% 67%,
-        96% 77%,
-        91% 88%,
-        82% 94%,
-        72% 92%,
-        62% 96%,
-        52% 93%,
-        42% 97%,
-        32% 93%,
-        22% 95%,
-        13% 91%,
-        6% 84%,
-        8% 74%,
-        4% 64%,
-        7% 54%,
-        4% 44%,
-        7% 34%,
-        4% 24%,
-        7% 15%
-    );
-    z-index: 1;
-}
-
-.photo-placeholder {
-    position: relative;
-    width: 360px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Caveat", cursive;
-    font-size: 24px;
-    text-align: center;
-    color: #222222;
-    z-index: 2;
-}
-
-.image-note {
-    position: absolute;
-    bottom: 55px;
-    right: 0;
-    background-color: #E8C5C8;
-    padding: 18px 25px;
-    font-family: "Caveat", cursive;
-    font-size: 22px;
-    line-height: 1.1;
-    transform: rotate(-4deg);
-    box-shadow: 0 8px 20px rgba(34, 34, 34, 0.1);
-    z-index: 3;
+.hero-image {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    display: block;
 }

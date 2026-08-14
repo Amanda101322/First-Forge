@@ -204,6 +204,18 @@ body {
 }
 
 .orchard-card {
+    grid-column:span 2;
+}
+
+.orchard-card:nth-child(4) {
+    grid-column: 1 / span 3;
+}
+
+.orchard-card:nth-child(5) {
+    grid-column: 1 / span 3;
+}
+
+.orchard-card {
     min-height: 230px;
     padding: 35px;
     box-sizing: border-box;

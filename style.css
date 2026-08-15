@@ -205,9 +205,11 @@ body {
 
 .orchard-card {
     min-height: 230px;
-    padding: 35px;
+    padding: 32px;
     box-sizing: border-box;
+    background-color: #F7F3ED;
     border: 1px solid rgba(34, 34, 34, 0.12);
+    border-radius: 4px;
 }
 
 .orchard-card:nth-child(1),
@@ -223,34 +225,37 @@ body {
 
 .orchard-card h3 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 500;
-    margin: 0 0 18px;
+    line-height: 1;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
 }
 
 .orchard-card p {
     max-width: 430px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     margin: 0;
 }
 
 .project-list {
-    margin-top: 30px;
+    margin-top: 28px;
     display: grid;
-    gap: 22px;
+    gap: 0;
 }
 
 .project-item {
-    padding-top: 20px;
+    padding: 18px 0;
     border-top: 1px solid rgba(34, 34, 34, 0.12);
 }
 
 .project-item h4 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 600;
-    margin: 0 0 6px;
+    line-height: 1.1;
+    margin: 0 0 7px;
 }
 
 .project-item p {

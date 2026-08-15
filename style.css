@@ -200,31 +200,25 @@ body {
 .orchard-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
+    gap: 12px;
 }
 
 .orchard-card {
-    grid-column:span 2;
     min-height: 230px;
     padding: 35px;
     box-sizing: border-box;
     border: 1px solid rgba(34, 34, 34, 0.12);
+}
+
+.orchard-card:nth-child(1),
+.orchard-card:nth-child(2),
+.orchard-card:nth-child(3) {
+    grid-column: span 2;
 }
 
 .orchard-card:nth-child(4),
 .orchard-card:nth-child(5) {
     grid-column: span 3;
-}
-
-.orchard-card:nth-child(5) {
-    grid-column: 1 / span 3;
-}
-
-.orchard-card {
-    min-height: 230px;
-    padding: 35px;
-    box-sizing: border-box;
-    border: 1px solid rgba(34, 34, 34, 0.12);
 }
 
 .orchard-card h3 {

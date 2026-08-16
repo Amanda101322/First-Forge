@@ -213,16 +213,23 @@ body {
     border-radius: 14px;
 }
 
+.orchard-card:nth-child(1),
+.orchard-card:nth-child(2),
+.orchard-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.orchard-card:nth-child(4),
+.orchard-card:nth-child(5) {
+    grid-column: span 3;
+
+}
+
 .orchard-card:nth-child(1) {
     background-color: #DDE2C9;
 }
-
 .orchard-card:nth-child(2) {
-    background-color: #EFD8D4;
-}
-.orchard-card:nth-child(3) {
     background-color: #DDE2C9;
-    grid-column: span 2;
 }
 
 .orchard-card:nth-child(4) {
@@ -231,7 +238,6 @@ body {
 
 .orchard-card:nth-child(5) {
     background-color: #DDE2C9;
-    grid-column: span 3;
 }
 
 .orchard-card h3 {
@@ -275,3 +281,4 @@ body {
     line-height: 1.6;
     margin: 0;
 }
+

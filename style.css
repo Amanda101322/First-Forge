@@ -128,9 +128,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 0px;
+    align-self: start;
+    min-height: 0;
     overflow: visible;
     transform: translateX(25px);
+    padding-top: 10px;
 }
 
 .hero-image {
@@ -317,5 +319,12 @@ body {
 }
 
 .bookshelf.section-intro {
-    max-width: 560;
+    max-width: 560px;
+}
+
+.explore-note {
+    font-family: "Caveat", cursive;
+    font-size: 21px;
+    margin: 24px 0 0;
+    opacity: 0.75;
 }

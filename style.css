@@ -485,6 +485,15 @@ body {
     margin-left: 22%;
 }
 
+.impact-preview-card a {
+    margin-top: auto;
+    padding-top: 12px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.4em;
+    color: #222222;
+    text-decoration: none;
+}
 .impact-preview-card {
     min-height: 175px;
     padding: 20px;
@@ -528,11 +537,6 @@ body {
     font-size: 11px;
     line-height: 1.5;
     margin: 0;
-}
-
-.impact-preview-card a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
 }
 
 @media (max-width: 1000px) {
@@ -618,6 +622,11 @@ body {
     .orchard-card:nth-child(5) {
         grid-column: auto;
     }
+
+    .impact-preview-grid {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -638,7 +647,7 @@ body {
     }
 
     .hero h1 {
-        font-size: clam(52px, 15vw, 72px);
+        font-size: clamp(52px, 15vw, 72px);
     }
 
     .hero-note {
@@ -651,11 +660,5 @@ body {
 
     .orchard-preview-card {
         min-height: 170px;
-    }
-
-@media (max-width: 760px) {
-    .impact-preview-grid {
-        grid-template-columns: 1fr;
-        margin-left: 0;
     }
 }

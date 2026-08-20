@@ -1135,4 +1135,70 @@ body {
     .bookshelf-note {
         margin-left: 0;
     }
+
+    .home-closing {
+        padding: 80px 7% 90px;
+    }
+
+    .home-closing h2 {
+        font-size: clamp(40px, 12vw, 58px);
+    }
 }
+
+.home-closing {
+    position: relative;
+    padding: 110px 7% 120px;
+    text-align: center;
+    background-color: #F8F6F1;
+    border-top: 1px solid rgba(34, 34, 34, 0.08);
+}
+
+.closing-star {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    margin-bottom: 22px;
+    opacity: 0.65;
+}
+
+.closing-note {
+    margin: 0 0 25px;
+    font-family: "Caveat", cursive;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.home-closing h2 {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(45px, 6vw, 72px);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+}
+
+.closing-subtext {
+    max-width: 420px;
+    margin: 28px auto 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 35px; 
+    font-family: "DM Sans", sans-serif; 
+    font-size: 10px; 
+    letter-spacing: 0.08em; 
+    text-transform: uppercase; 
+    color: #222222; 
+    text-decoration: none;
+} 
+
+.back-to-top:hover { 
+    text-decoration: underline; 
+    text-underline-offset: 5px; 
+}
+

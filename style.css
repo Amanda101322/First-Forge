@@ -636,6 +636,10 @@ body {
     .writing-note {
         margin-left: 0;
     }
+    .bookshelf-preview {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
 }
 
 .home-writing {
@@ -674,7 +678,7 @@ body {
 
 .writing-preview {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 14px;
     margin-left: 22%;
 }
@@ -749,6 +753,113 @@ body {
     font-size: 20px;
     opacity: 0.75;
 }
+
+.home-bookshelf {
+    position: relative;
+    padding: 55px 7% 65px;
+    background-color: #F8F6F1;
+    border-top: 1px solid rgba(34, 34, 34, 0.08)
+}
+
+.bookshelf-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.bookshelf-heading {
+    flex-shrink: 0;
+}
+
+.bookshelf-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 8px;
+}
+
+.bookshelf-heading p {
+    max-width: 430px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.bookshelf-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-left: 22%;
+}
+
+.bookshelf-preview-card {
+    min-height: 190px;
+    padding: 22px;
+    border: 1px solid rgba(55, 55, 45, 0.10);
+    display: flex;
+    flex-direction: column;
+}
+
+.bookshelf-preview-card:nth-child(1) {
+    background-color: #DDE2C9;
+}
+
+.bookshelf-preview-card:nth-child(2) {
+    background-color: #EFD8D4;
+}
+
+.bookshelf-preview-card:nth-child(3) {
+    background-color: #DDE2C9;
+}
+
+.book-status {
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    color: #5F6664;
+    margin-bottom: 18px;
+}
+
+.bookshelf-preview-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 10px;
+}
+
+.bookshelf-preview-card p {
+    max-width: 250px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    line-height: 1.55;
+    margin: 0.7;
+}
+
+.bookshelf-preview-card a {
+    margin-top: auto;
+    padding-top: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.05em;
+    color: #222222;
+    text-decoration: none;
+}
+
+.bookshelf-preview-card a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.bookshelf-note {
+    margin: 24px 0 0 22%;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    opacity: 0.75;
+}
 @media (max-width: 500px) {
     .logo {
         font-size: 27px;
@@ -788,5 +899,17 @@ body {
 
     .writing-heading h2 {
         font-size: 30px;
+    }
+
+    .bookshelf-intro {
+        gap: 12px;
+    }
+
+    .bookshelf-heading h2 {
+        font-size: 30px;
+    }
+
+    .bookshelf-note {
+        margin-left: 0;
     }
 }

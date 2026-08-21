@@ -665,6 +665,15 @@ body {
         align-items: flex-start;
         gap: 15px;
     }
+
+    .spotify-player {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .listening-note {
+        margin-left: 0;
+    }
 }
 
 .home-writing {
@@ -1295,5 +1304,54 @@ body {
     margin: 0;
     font-family: "Caveat", cursive;
     font-size: 18px;
+    opacity: 0.75;
+}
+
+.home-listening {
+    position: relative;
+    padding: 55px 7% 65px;
+    background-color: #F8F6F1;
+    border-top: 1px solid rgba(34, 34, 34, 0.08);
+}
+
+.listening-heading {
+    flex-shrink: 0;
+}
+
+.listening-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 8px;
+}
+
+.listening-heading p {
+    max-width: 430px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.spotify-player {
+    margin-left: 22%;
+    max-width: 720px;
+    padding: 14px;
+    background-color: #E8C5C8;
+    border: 1px solid rgba(55, 55, 45, 0.10);
+}
+
+.spotify-player iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+}
+
+.listening-note {
+    margin: 20px 0 0 22%;
+    font-family: "Caveat", cursive;
+    font-size: 20px;
     opacity: 0.75;
 }

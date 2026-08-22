@@ -676,7 +676,18 @@ body {
     }
 
     .section-nav-note { 
-        margin-left: 0; }
+        margin-left: 0;
+    }
+
+    .footer-links {
+        width: 100%;
+        gap: 55px;
+    }
+
+    .footer-navigation, 
+    .footer-socials {
+        gap: 10px;
+    }
 }
 
 .home-writing {
@@ -1218,65 +1229,8 @@ body {
     }
 }
 
-.home-closing {
-    position: relative;
-    padding: 110px 7% 120px;
-    text-align: center;
-    background-color: #F8F6F1;
-    border-top: 1px solid rgba(34, 34, 34, 0.08);
-}
-
-.closing-star {
-    display: block;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 28px;
-    margin-bottom: 22px;
-    opacity: 0.65;
-}
-
-.closing-note {
-    margin: 0 0 25px;
-    font-family: "Caveat", cursive;
-    font-size: 25px;
-    line-height: 1.2;
-}
-
-.home-closing h2 {
-    max-width: 650px;
-    margin: 0 auto;
-    font-family: "Cormorant Garamond", serif;
-    font-size: clamp(45px, 6vw, 72px);
-    font-weight: 500;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
-}
-
-.closing-subtext {
-    max-width: 420px;
-    margin: 28px auto 0;
-    font-family: "DM Sans", sans-serif;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.back-to-top {
-    display: inline-block;
-    margin-top: 35px; 
-    font-family: "DM Sans", sans-serif; 
-    font-size: 10px; 
-    letter-spacing: 0.08em; 
-    text-transform: uppercase; 
-    color: #222222; 
-    text-decoration: none;
-} 
-
-.back-to-top:hover { 
-    text-decoration: underline; 
-    text-underline-offset: 5px; 
-}
-
 .site-footer {
-    padding: 65px 7% 28px;
+    padding: 5px 7% 28px;
     background-color: #DCEAF0;
     border-top: 1px solid rgba(34, 34, 34, 0.10);
 }
@@ -1315,14 +1269,21 @@ body {
     color: #5F6664;
 }
 
-.footer-navigation {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 55px;
-    row-gap: 12px;
+.footer-navigation a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
-.footer-navigation a:hover {
+.footer-top {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;
+}
+
+.footer-top:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
@@ -1341,6 +1302,56 @@ body {
     font-family: "Caveat", cursive;
     font-size: 18px;
     opacity: 0.75;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-navigation, 
+.footer-socials {
+    display: grid;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer-navigation a,
+.footer-socials a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    color: #222222;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-navigation a:hover,
+.footer-socials a:hover{
+    opacity: 0.55;
+}
+
+.footer-handwritten {
+    margin: 16px 0 0;
+    font-family: "Caveat", cursive;
+    font-size: 18px;
+    opacity: 0.75;
+}
+
+.footer-bottom p {
+    font-family: "Caveat", cursive;
+}
+
+.footer-label {
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: #5F6664;
 }
 
 .home-listening {

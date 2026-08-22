@@ -1,3 +1,22 @@
+:root {
+    --background: #F8F6F1;
+    --text: #222222;
+    --muted-text: #5F6664;
+    --blue: #DCEAF0;
+    --sage: #DDE2C9;
+    --rose: #EFD8D4;
+    --border: rgba(34, 34, 34, 0.10);
+}
+
+body.dark-theme {
+    --background: #202322;
+    --text: #F4F0E8;
+    --muted-text: #B8B8AE;
+    --blue: #29373B;
+    --sage: #3D4639;
+    --rose: #493A3D;
+    --border: rgba(244, 240, 232, 0.12);
+}
 * {
     box-sizing: border-box;
 }
@@ -10,6 +29,27 @@ body {
     background-color: #F8F6F1;
     color: #222222;
     font-family: "Lora", serif;
+}
+
+.theme-toggle {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: rotate(8deg);
 }
 
 .site-header {
@@ -1339,7 +1379,9 @@ body {
 .footer-handwritten {
     margin: 16px 0 0;
     font-family: "Caveat", cursive;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #222222;
     opacity: 0.75;
 }
 

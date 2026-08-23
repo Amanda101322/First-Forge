@@ -796,6 +796,16 @@ body {
     background-color: var(--rose);
 }
 
+.personal-preview-card:nth-child(odd),
+.launchpad-preview-card:nth-child(odd) {
+    background-color: var(--sage);
+}
+
+.personal-preview-card:nth-child(even),
+.launchpad-preview-card:nth-child(even) {
+    background-color: var(--sage);
+}
+
 .writing-type {
     font-family: "DM Sans", sans-serif;
     font-size: 9px;
@@ -1347,25 +1357,46 @@ body {
     gap: 16px;
 }
 
+.footer-column:last-child {
+    margin-top: 30px;
+}
+
+.footer-column:first-child {
+    margin-top: 30px;
+}
 .footer-navigation, 
 .footer-socials {
-    display: grid;
-    gap: 10px;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 28opx;
 }
 
 .footer-navigation a,
 .footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background-color: var(--sage);
+    border: 1px solid var(--border);
+    border-radius: 20px;
     font-family: "DM Sans", sans-serif;
     font-size: 11px;
+    font-weight: 500;
     color: var(--text);
     text-decoration: none;
-    transition: opacity 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .footer-navigation a:hover,
 .footer-socials a:hover{
-    opacity: 0.55;
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer-socials a:nth-child(even) {
+    background-color: var(--rose);
 }
 
 .footer-handwritten {

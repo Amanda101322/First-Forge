@@ -5,7 +5,7 @@
     --blue: #D0E1E8;
     --sage: #D8E0D5;
     --rose: #E8D0D5;
-    --border: rgba(34, 34, 34, 0.10);
+    --border: #e8eee9;
 }
 
 body.dark-theme {
@@ -28,7 +28,7 @@ body {
     margin: 0;
     background-color: var(--background);
     color:var(--text);
-    font-family: "Lora", serif;
+    font-family: "DM Sans", serif;
 }
 
 .theme-toggle {
@@ -70,7 +70,7 @@ body {
 
 .logo {
     font-family: "Cormorant Garamond", serif;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     color: var(--text);
     text-decoration: none;

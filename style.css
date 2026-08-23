@@ -1,10 +1,10 @@
 :root {
-    --background: var(--background);
-    --text: var(--text);
-    --muted-text: var(--muted-text);
-    --blue: var(--blue);
-    --sage: var(--sage);
-    --rose: var(--rose);
+    --background: #FDFBF7;
+    --text: #222222;
+    --muted-text: #767676;
+    --blue: #D0E1E8;
+    --sage: #D8E0D5;
+    --rose: #E8D0D5;
     --border: rgba(34, 34, 34, 0.10);
 }
 
@@ -62,7 +62,7 @@ body {
     top: 0;
     z-index: 100;
     border-bottom: 1px solid var(--border);
-    background-color: car(--blue);
+    background-color: var(--blue);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
@@ -107,8 +107,8 @@ body {
 }
 
 .hero {
-    min-height: calc(100vh - 70px);
-    padding: 55px 6% 90px;
+    min-height: calc(80vh - 70px);
+    padding: 35px 6% 50px;
     display: grid;
     grid-template-columns: 0.85fr 1.15fr;
     align-items: center;
@@ -1249,7 +1249,7 @@ body {
     }
 
     .site-footer {
-        padding: 55px 7% 25px;
+        padding: 35px 7% 20px;
     }
 
     .footer-navigation {
@@ -1272,7 +1272,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 60px;
-    padding-bottom: 55px;
+    padding-bottom: 30px;
 }
 
 .footer-brand {

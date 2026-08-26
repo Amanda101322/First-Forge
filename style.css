@@ -525,7 +525,7 @@ img {
     margin-bottom: 28px;
 }
 
-.impact-heading h2
+.impact-heading h2,
 .writing-heading h2,
 .personal-heading h2,
 .launchpad-heading h2,
@@ -1482,7 +1482,7 @@ img {
     line-height: 1.75;
 }
 
-.page-hero .handwriten {
+.page-hero .handwritten {
     margin-top: 35px;
 }
 
@@ -1611,7 +1611,7 @@ img {
     margin-top: auto;
 }
 
-.bookshelf-full grid {
+.bookshelf-full-grid {
     padding: 20px 8% 90px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1650,14 +1650,13 @@ img {
 .full-book-info {
     margin-top: 20px;
     font-family: "Cormorant Garamond", serif;
-    font-size: y
 }
 
-.full-book info span {
+.full-book-info-span {
     font-family: "DM Sans", sans-serif;
-    font-size: 9x;
+    font-size: 9px;
     letter-spacing: 0.12em;
-    color: var(--muted text)
+    color: var(--muted text);
 }
 
 .full-book-info h2 {
@@ -1670,7 +1669,7 @@ img {
 
 .full-book-inspo p {
     margin: 0;
-    font-family: "DM Sans", sans-sefif;
+    font-family: "DM Sans", sans-serif;
     font-size: 11px;
     color: var(--muted-text);
 }
@@ -1728,7 +1727,7 @@ img {
 }
 .home-page {
     background-color: var(--blue);
-
+}
      .home-page .home-orchard,
      .home-page .home-impact,
      .home-page .home-writing,
@@ -1738,5 +1737,4 @@ img {
      .home-page .home-listening,
      .home-page .home-closing {
     background-color: transparent;
-}
 }

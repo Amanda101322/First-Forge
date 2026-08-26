@@ -395,22 +395,15 @@ img {
     max-width: 560px;
 }
 
-.home-orchard {
+.home-personal {
     position: relative;
-    padding: 28px 7% 48px;
+    padding: 55px 7% 65px;
     background-color: transparent;
     border-top: 1px solid var(--border);
 }
 
 .home-section-intro {
     margin-bottom: 22px;
-}
-
-.section-number {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 30px;
-    line-height: 1;
-    flex-shrink: 0;
 }
 
 .home-section-intro > div {
@@ -1746,7 +1739,7 @@ img {
     }
 
     .subpage-grid {
-        grid-template-columns: repeat(auto-fill), minmax(min(100%, 280px), 1fr);
+        grid-template-columns: repeat(auto-fill), minmax(260px 1fr);
         gap: 1.5rem;
         padding: 0 5% 60px;
     }
@@ -1807,34 +1800,4 @@ img {
     .subpage-card:hover {
         transform: none;
     }
-}
-
-@media screen and (max-width: 480px) {
-    :root {
-        --section-padding: 30px 1rem 40px;
-        --card-padding: 1.25rem;
-    }
-
-    body {
-        padding: 0 0.5rem;
-    }
-}
-
-* {
-    outline: 1px solid red !important;
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-img, svg, picture {
-    max-width: 100%;
-    height: auto;
-}
-
-h1, .subpage-title {
-    overflow-wrap: break-word;
-    word-break: break-word;
 }

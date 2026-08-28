@@ -2042,9 +2042,7 @@ img {
 }
 
 
-/* ========================================
-   CARD TEXT
-   ======================================== */
+/* Card text*/
 
 .personal-card h2 {
     max-width: 450px;
@@ -2206,9 +2204,7 @@ img {
 }
 
 
-/* ========================================
-   FOOTER
-   ======================================== */
+/* Footer */
 
 .personal-page .site-footer {
     background-color: var(--blue);
@@ -2294,9 +2290,7 @@ img {
     background-color: var(--background);
 }
 
-/* ========================================
-   WRITING HERO
-   ======================================== */
+/* Writing Hero */
 
 .writing-page .page-hero {
     position: relative;
@@ -2408,9 +2402,9 @@ img {
     filter: saturate(1);
 }
 
-/* ========================================
-   CARD CONTENT & TYPOGRAPHY
-   ======================================== */
+/*
+   Card Content and typography
+    */
 
 .article-content {
     padding: 30px;
@@ -2472,9 +2466,7 @@ img {
     opacity: 0.9;
 }
 
-/* ========================================
-   CARD FOOTER & BADGES
-   ======================================== */
+/* Card footer and badges*/
 
 .card-footer {
     margin-top: auto;
@@ -2516,9 +2508,7 @@ img {
     opacity: 0.65;
 }
 
-/* ========================================
-   WRITING PAGE RESPONSIVE
-   ======================================== */
+/* Writing page responsiveness*/
 
 @media (max-width: 820px) {
     .writing-page-grid {
@@ -2546,5 +2536,265 @@ img {
 
     .article-content h2 {
         font-size: 28px;
+    }
+}
+
+/* Orchard Page*/
+.orchard-page {
+    background-color: var(--background);
+}
+
+/* Orchard Hero*/
+.orchard-page .page-hero {
+    position: relative;
+    padding: 90px 8% 50px;
+    max-width: 950px;
+}
+
+.orchard-page .page-hero .handwritten {
+    margin: 0 0 14px;
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    line-height: 1.2;
+    opacity: 0.75;
+    transform: rotate(-2deg);
+}
+
+.orchard-page .page-hero h1 {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(70px, 10vw, 130px);
+    font-weight: 500;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+}
+
+.orchard-page .page-intro {
+    max-width: 580px;
+    margin: 30px 0 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+/* Orchard Grid */
+.orchard-grid-full {
+    padding: 20px 8% 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+/* Base Card Shell */
+.large-card {
+    position: relative;
+    padding: 36px;
+    border: 1px solid rgba(55, 55, 45, 0.10);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        0 4px 0 rgba(55, 55, 45, 0.04),
+        0 10px 24px rgba(55, 55, 45, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+
+/* Alternating Card Colors */
+.large-card:nth-child(odd) {
+    background-color: var(--sage);
+}
+
+.large-card:nth-child(even) {
+    background-color: var(--rose);
+}
+
+/* Subtle Rotations */
+.large-card:nth-child(1) { transform: rotate(-0.5deg); }
+.large-card:nth-child(2) { transform: rotate(0.6deg); }
+.large-card:nth-child(3) { transform: rotate(0.4deg); }
+.large-card:nth-child(4) { transform: rotate(-0.6deg); }
+.large-card:nth-child(5) { transform: rotate(0.5deg); }
+.large-card:nth-child(6) { transform: rotate(-0.4deg); }
+
+/* Hover Effects */
+.large-card:hover {
+    transform: translateY(-6px) rotate(0deg);
+    box-shadow:
+        0 6px 0 rgba(55, 55, 45, 0.04),
+        0 16px 30px rgba(55, 55, 45, 0.11);
+}
+
+/* Decorative Star Accent */
+.large-card::after {
+    content: "✦";
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    opacity: 0.35;
+}
+
+/* Card Content & Typography */
+.large-card h2 {
+    margin: 0 0 16px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+
+.large-card p {
+    margin: 0 0 18px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.7;
+}
+
+.large-card .handwritten {
+    margin-top: auto;
+    font-family: "Caveat", cursive;
+    font-size: 18px;
+    opacity: 0.75;
+}
+
+/* Projects and learning lists */
+.project-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.project-item {
+    padding: 12px 14px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(55, 55, 45, 0.08);
+    border-radius: 6px;
+}
+
+.project-item strong {
+    display: block;
+    font-family: "DM Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.project-item p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+.learning-list,
+.course-list,
+.sewing-wishlist {
+    margin: 10px 0 18px;
+    padding-left: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.course-platform {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+/* Sewing Sections */
+.sewing-subsection {
+    margin-top: 15px;
+}
+
+.sewing-subsection strong {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+}
+
+.pattern-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.pattern-chip {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    padding: 4px 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(55, 55, 45, 0.12);
+    border-radius: 14px;
+}
+
+.garment-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.garment-item {
+    margin: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.garment-item img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+}
+
+.garment-item figcaption {
+    font-family: "Caveat", cursive;
+    font-size: 14px;
+    text-align: center;
+    padding: 4px;
+    opacity: 0.8;
+}
+
+/* Responsiveness of the orchard */
+@media (max-width: 820px) {
+    .orchard-grid-full {
+        grid-template-columns: 1fr;
+        padding: 10px 7% 75px;
+        gap: 22px;
+    }
+
+    .large-card {
+        padding: 28px;
+    }
+
+    .large-card:nth-child(1),
+    .large-card:nth-child(2),
+    .large-card:nth-child(3),
+    .large-card:nth-child(4),
+    .large-card:nth-child(5),
+    .large-card:nth-child(6) {
+        transform: none;
+    }
+
+    .large-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .large-card h2 {
+        font-size: 32px;
     }
 }

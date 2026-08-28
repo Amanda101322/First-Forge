@@ -2287,3 +2287,264 @@ img {
         top: 20px;
     }
 }
+
+/* Writing Page*/
+
+.writing-page {
+    background-color: var(--background);
+}
+
+/* ========================================
+   WRITING HERO
+   ======================================== */
+
+.writing-page .page-hero {
+    position: relative;
+    padding: 90px 8% 60px;
+    max-width: 950px;
+}
+
+.writing-page .page-hero .page-kicker {
+    margin: 0 0 12px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted-text);
+}
+
+.writing-page .page-hero h1 {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(70px, 10vw, 130px);
+    font-weight: 500;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+}
+
+.writing-page .page-intro {
+    max-width: 580px;
+    margin: 30px 0 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.writing-page .page-hero .handwritten {
+    margin: 15px 0 0;
+    font-family: "Caveat", cursive;
+    font-size: 22px;
+    opacity: 0.75;
+    transform: rotate(-1.5deg);
+}
+
+/* Writing grid and cards*/
+
+.writing-page-grid {
+    padding: 20px 8% 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.writing-full-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(55, 55, 45, 0.10);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 0 rgba(55, 55, 45, 0.04),
+        0 10px 24px rgba(55, 55, 45, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Alternate Background Colors */
+.writing-full-card.sage-card {
+    background-color: var(--sage);
+}
+
+.writing-full-card.rose-card {
+    background-color: var(--rose);
+}
+
+/* Gentle Paper-Rotations */
+.writing-full-card:nth-child(odd) {
+    transform: rotate(-0.5deg);
+}
+
+.writing-full-card:nth-child(even) {
+    transform: rotate(0.6deg);
+}
+
+.writing-full-card:hover {
+    transform: translateY(-6px) rotate(0deg);
+    box-shadow:
+        0 6px 0 rgba(55, 55, 45, 0.04),
+        0 18px 32px rgba(55, 55, 45, 0.12);
+}
+
+/* Article Thumbnails*/
+
+.article-thumbnail {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(55, 55, 45, 0.08);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.article-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.9);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.writing-full-card:hover .article-thumbnail img {
+    transform: scale(1.04);
+    filter: saturate(1);
+}
+
+/* ========================================
+   CARD CONTENT & TYPOGRAPHY
+   ======================================== */
+
+.article-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.article-content .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.writing-type {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid rgba(55, 55, 45, 0.12);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.35);
+    font-family: "DM Sans", sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--muted-text);
+}
+
+.read-time {
+    font-family: "Caveat", cursive;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.article-content h2 {
+    margin: 0 0 14px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+}
+
+.article-content h2 a {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.article-content h2 a:hover {
+    opacity: 0.7;
+}
+
+.article-content p {
+    margin: 0 0 24px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14.5px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* ========================================
+   CARD FOOTER & BADGES
+   ======================================== */
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px dashed rgba(55, 55, 45, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.writing-status {
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.6;
+}
+
+.read-link {
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    color: inherit;
+    transition: transform 0.2s ease;
+}
+
+.read-link:hover {
+    transform: translateX(3px);
+}
+
+/* Closing Note */
+.page-closing-note {
+    text-align: center;
+    margin: 20px 0 90px;
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    opacity: 0.65;
+}
+
+/* ========================================
+   WRITING PAGE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 820px) {
+    .writing-page-grid {
+        grid-template-columns: 1fr;
+        padding: 10px 7% 60px;
+        gap: 24px;
+    }
+
+    .writing-full-card:nth-child(odd),
+    .writing-full-card:nth-child(even) {
+        transform: none;
+    }
+
+    .writing-full-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .article-thumbnail {
+        height: 180px;
+    }
+
+    .article-content {
+        padding: 24px;
+    }
+
+    .article-content h2 {
+        font-size: 28px;
+    }
+}

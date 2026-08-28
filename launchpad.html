@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Launchpad — First Forge</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="launchpad-page">
-<header class="site-header">
 
+<header class="site-header">
     <a href="index.html" class="logo">
         First Forge <span>❧</span>
     </a>
@@ -27,191 +22,121 @@
         <a href="mybookshelf.html">My Bookshelf</a>
         <a href="impact.html">Impact</a>
         <a href="personal.html">Personal</a>
-        <a href="launchpad.html">Launchpad</a>
+        <a href="launchpad.html" class="active">Launchpad</a>
     </nav>
 
-    <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
-        ☾
-    </button>
-
+    <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">☾</button>
 </header>
-
 
 <main class="inner-page">
 
     <section class="page-hero">
-        <p class="handwritten">
-            looking forward
-        </p>
-
-        <h1>
-            Launchpad
-        </h1>
-
+        <p class="handwritten">where ideas turn into things I actually wanna do</p>
+        <h1>Launchpad</h1>
         <p class="page-intro">
-            Ideas, goals, projects, and places I want to go.
-            Some are plans. Some are just sparks.
+            A staging ground for active builds, research conclusions, academic targets, and life plans.
         </p>
-
     </section>
 
+    <section class="launchpad-group">
+        <div class="group-header">
+            <span class="group-tag">IN DEVELOPMENT</span>
+            <h2>Active Builds &amp; Capstone Projects</h2>
+        </div>
 
-    <section class="launch-grid">
+        <div class="launchpad-cards">
 
-        <article class="launch-card">
+            <article class="launchpad-card">
+                <div class="card-status active-build">In Development</div>
+                <h3>SweetTooth: Dynamic Recipe Vault</h3>
+                <p>An interactive web application designed to solve baking decision fatigue and culinary math.</p>
+                
+                <ul class="feature-list">
+                    <li><strong>Decision Wheel:</strong> Random recipe generator for undecided bakers</li>
+                    <li><strong>Dynamic Scaler:</strong> Automatic ingredient quantity calculation based on serving size</li>
+                    <li><strong>Utilities:</strong> Integrated baking timer and embedded video tutorials</li>
+                </ul>
 
-            <span>
-                UNIVERSITY
-            </span>
+                <div class="card-tech">HTML · CSS · JavaScript</div>
+            </article>
 
-            <h2>
-                Get there.
-            </h2>
+            <article class="launchpad-card">
+                <div class="card-status research-capstone">Research Project</div>
+                <h3>Digital Piggybank App</h3>
+                <p>Building a functional digital savings solution serving as the practical answer and resolving factor to my independent research inquiry.</p>
 
-            <p>
-                I'm working toward university and exploring
-                opportunities in the US, Canada, and elsewhere.
-            </p>
+                <ul class="feature-list">
+                    <li>Applied research resolution</li>
+                    <li>Targeted savings tracking and goal allocation</li>
+                </ul>
 
-            <p>
-                Fully funded scholarships are a major part
-                of that plan.
-            </p>
+                <div class="card-tech">Research · FinTech UI · Logic</div>
+            </article>
 
-        </article>
+            <article class="launchpad-card">
+                <div class="card-status active-build">In Development</div>
+                <h3>Professional Digital Portfolio</h3>
+                <p>Constructing a central hub to present academic milestones, technical projects, and creative writing.</p>
 
+                <div class="card-tech">Web Architecture · Content Design</div>
+            </article>
 
-        <article class="launch-card">
-
-            <span>
-                EXAMS
-            </span>
-
-            <h2>
-                Keep preparing.
-            </h2>
-
-            <p>
-                SAT, TOEFL, and CSCA are part of the road
-                I'm currently preparing for.
-            </p>
-
-        </article>
-
-
-        <article class="launch-card">
-
-            <span>
-                LAW
-            </span>
-
-            <h2>
-                Corporate law.
-            </h2>
-
-            <p>
-                I'm interested in the intersection of law,
-                business, finance, and the corporate world.
-            </p>
-
-        </article>
-
-
-        <article class="launch-card">
-
-            <span>
-                TECHNOLOGY
-            </span>
-
-            <h2>
-                Go deeper.
-            </h2>
-
-            <p>
-                I've been building websites.
-                Now I'm getting curious about what happens
-                behind them.
-            </p>
-
-        </article>
-
-
-        <article class="launch-card">
-
-            <span>
-                CREATIVE
-            </span>
-
-            <h2>
-                Make more.
-            </h2>
-
-            <p>
-                More sewing. More websites. More design.
-                More projects that begin as "what if?"
-            </p>
-
-        </article>
-
-
-        <article class="launch-card">
-
-            <span>
-                MAYBE SOMEDAY
-            </span>
-
-            <h2>
-                A sewing machine.
-            </h2>
-
-            <p>
-                One of the things sitting quietly on
-                the wishlist.
-            </p>
-
-            <p class="handwritten">
-                we'll get there
-            </p>
-
-        </article>
-
+        </div>
     </section>
 
+    <section class="launchpad-group">
+        <div class="group-header">
+            <span class="group-tag">MILESTONES</span>
+            <h2>Academic Goals</h2>
+        </div>
 
-    <section class="launch-note">
+        <div class="launchpad-cards">
+            <article class="launchpad-card">
+                <div class="card-status target">Target</div>
+                <h3>Undergraduate Scholarship</h3>
+                <p>Preparing competitive application packages to secure a fully funded scholarship for college on a Corporate Law track.</p>
+                
+                <div class="card-tech">Higher Education · Legal Track</div>
+            </article>
+        </div>
+    </section>
 
-        <p class="handwritten">
-            no need to have everything figured out
-        </p>
+    <section class="launchpad-group">
+        <div class="group-header">
+            <span class="group-tag">THE BACKLOG</span>
+            <h2>Maybe Someday</h2>
+        </div>
 
-        <h2>
-            I'm building toward a life
-            I haven't seen yet.
-        </h2>
+        <div class="launchpad-cards">
 
+            <article class="launchpad-card concept">
+                <div class="card-status idea">Life Goal</div>
+                <h3>Bespoke Apparel &amp; Garment Design</h3>
+                <p>Expanding sewing skills from a hobby into crafting full custom clothing collections for myself and others.</p>
+            </article>
+
+            <article class="launchpad-card concept">
+                <div class="card-status idea">Vision</div>
+                <h3>Independent Living &amp; International Travel</h3>
+                <p>Building a self-sufficient lifestyle, traveling abroad, and exploring the world on vacation.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="launchpad-note">
+        <p class="handwritten">not everything needs a plan yet — some things just need room to exist</p>
     </section>
 
 </main>
 
-
 <footer class="site-footer">
-
     <div class="footer-bottom">
-
-        <p>
-            First Forge · established 2026 · still becoming
-        </p>
-
-        <a href="#" class="footer-top">
-            Back to the beginning
-        </a>
-
+        <p>First Forge · established 2026 · still becoming</p>
+        <a href="#" class="footer-top">Back to the beginning</a>
     </div>
-
 </footer>
 
-
 <script src="script.js"></script>
-
 </body>
 </html>

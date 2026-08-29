@@ -689,17 +689,297 @@ img {
     transform: rotate(-1deg);
 }
 
-/* Bookshelf Page */
-.bookshelf {
-    padding: 70px 8% 120px;
+/* Bookshelf page */
+.bookshelf-page {
+    background-color: var(--blue);
 }
 
-.bookshelf .section-heading {
-    max-width: 700px;
+/* Bookshelf Hero */
+
+.bookshelf-page .page-hero {
+    max-width: 850px;
+    padding: 90px 8% 65px;
 }
 
-.bookshelf.section-heading h2 {
-    max-width: 600px;
+.bookshelf-page .page-kicker {
+    margin: 0 0 16px;
+}
+
+.bookshelf-page .page-hero h1 {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(68px, 9vw, 120px);
+    font-weight: 500;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+}
+
+.bookshelf-page .page-intro {
+    max-width: 540px;
+    margin: 30px 0 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.bookshelf-page .page-hero .handwritten {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* Book Grid */
+.bookshelf-page .bookshelf-full-grid {
+    padding: 10px 8% 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: stretch;
+}
+
+/* Individual Book Card */
+.bookshelf-page .full-book-card {
+    position: relative;
+    min-width: 0;
+    padding: 24px;
+    background-color: var(--card-background);
+    border: 1px solid rgba(34, 34, 34, 0.10);
+    display: flex;
+    flex-direction: column;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.bookshelf-page .full-book-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 12px 24px rgba(34, 34, 34, 0.10);
+}
+
+/* Book Cover */
+.bookshelf-page .full-book-cover {
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+}
+
+.bookshelf-page .full-book-cover img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 190px;
+    max-height: 285px;
+    object-fit: contain;
+    box-shadow:
+        4px 8px 15px rgba(34, 34, 34, 0.16);
+    transition: transform 0.25s ease box-shadow 0.25s ease;
+}
+
+.bookshelf-page .full-book-card:hover .full-book-cover img {
+    transform: translateY(-5px) rotate(-1deg);
+    box-shadow:
+        6px 12px 20px rgba(34, 34, 34, 0.20);
+}
+
+/* Book Information */
+.bookshelf-page .full-book-info {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bookshelf-page .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 17px;
+}
+
+
+/* Genre Tags */
+.bookshelf-page .genre-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 9px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.10em;
+    color: var(--muted-text);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* Reading Status */
+.bookshelf-page .status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.bookshelf-page .status-badge.read {
+    background-color: var(--sage);
+}
+
+.bookshelf-page .status-badge.reading {
+    background-color: var(--rose);
+}
+
+.bookshelf-page .status-badge.studying {
+    background-color: var(--sage);
+}
+
+.bookshelf-page .status-badge.essential {
+    background-color: var(--rose);
+}
+
+/* Book Title */
+.bookshelf-page .full-book-info h2 {
+    margin: 0 0 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+}
+
+/* Author */
+.bookshelf-page .author {
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    color: var(--muted-text);
+}
+
+
+/* Rating */
+.bookshelf-page .rating {
+    margin: 14px 0 13px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--text);
+}
+
+
+/* Book Summary */
+.bookshelf-page .book-summary {
+    margin: 0;
+    max-width: 420px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--text);
+}
+
+
+/* Handwritten Notes */
+.bookshelf-page .handwritten-note {
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px dashed var(--border);
+    font-family: "Caveat", cursive;
+    font-size: 18px;
+    line-height: 1.25;
+    opacity: 0.78;
+    transform: rotate(-1deg);
+}
+
+
+/* Quotes */
+.bookshelf-page .book-quote {
+    margin: 20px 0 0;
+    padding: 15px 17px;
+    border-left: 2px solid var(--text);
+    background-color: rgba(255, 255, 255, 0.20);
+    font-family: "Lora", serif;
+    font-size: 12px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Highlight Books */
+.bookshelf-page .full-book-card.highlight-card {
+    background-color: #F3EEE4;
+}
+
+.bookshelf-page .highlight-card .full-book-cover {
+    background-color: rgba(216, 224, 213, 0.35);
+}
+
+
+/* Closing Note */
+.bookshelf-page .page-closing-note {
+    padding: 0 8% 90px;
+    margin: 0;
+    font-family: "Caveat", cursive;
+    font-size: 27px;
+    opacity: 0.78;
+    transform: rotate(-1deg);
+}
+
+/* Bookshelf responsiveness */
+@media (max-width: 1000px) {
+
+    .bookshelf-page .bookshelf-full-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .bookshelf-page .page-hero {
+        padding: 65px 7% 45px;
+    }
+
+    .bookshelf-page .page-hero h1 {
+        font-size: clamp(58px, 17vw, 85px);
+    }
+
+    .bookshelf-page .page-intro {
+        font-size: 15px;
+    }
+
+    .bookshelf-page .bookshelf-full-grid {
+        grid-template-columns: 1fr;
+        padding-left: 7%;
+        padding-right: 7%;
+        gap: 16px;
+    }
+
+    .bookshelf-page .full-book-card {
+        padding: 20px;
+    }
+
+    .bookshelf-page .full-book-cover {
+        height: 280px;
+    }
+
+    .bookshelf-page .full-book-cover img {
+        max-height: 255px;
+    }
+
+    .bookshelf-page .full-book-info h2 {
+        font-size: 29px;
+    }
+
+    .bookshelf-page .page-closing-note {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
 }
 
 /* Homepage Personal */

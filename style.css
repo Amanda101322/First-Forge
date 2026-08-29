@@ -3088,7 +3088,6 @@ img {
     box-shadow: 0 10px 22px rgba(34, 34, 34, 0.08);
 }
 
-
 /* Status */
 .card-status {
     width: fit-content;
@@ -3105,19 +3104,15 @@ img {
 .active-build {
     background-color: rgba(255, 255, 255, 0.35);
 }
-
 .research-capstone {
     background-color: rgba(255, 255, 255, 0.45);
 }
-
 .target {
     background-color: rgba(255, 255, 255, 0.4);
 }
-
 .idea {
     background-color: rgba(255, 255, 255, 0.4);
 }
-
 
 /* Card typography */
 .launchpad-card h3 {
@@ -3136,7 +3131,6 @@ img {
     font-size: 13px;
     line-height: 1.65;
 }
-
 
 /* Feature lists */
 .feature-list {
@@ -3157,9 +3151,7 @@ img {
     border-bottom: 1px solid rgba(55, 55, 45, 0.10);
 }
 
-
 /* Technology / category line */
-
 .card-tech {
     margin-top: auto;
     padding-top: 25px;
@@ -3170,7 +3162,6 @@ img {
     color: var(--muted-text);
 }
 
-
 /* Maybe Someday cards */
 .launchpad-card.concept {
     min-height: 270px;
@@ -3179,7 +3170,6 @@ img {
 .launchpad-card.concept:nth-child(even) {
     background-color: var(--sage);
 }
-
 
 /* Handwritten ending */
 .launchpad-note {
@@ -3195,4 +3185,284 @@ img {
     line-height: 1.3;
     opacity: 0.75;
     transform: rotate(-1deg);
+}
+
+/* Impact Page */
+.impact-page {
+    background: var(--background);
+}
+
+/* Impact Hero */
+.impact-page .page-hero {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 90px 20px 55px;
+    text-align: center;
+}
+
+.impact-page .page-hero .handwritten {
+    margin-bottom: 12px;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+.impact-page .page-hero h1 {
+    margin: 0 0 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.impact-page .page-intro {
+    max-width: 680px;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+/* Impact Cards */
+.impact-page .impact-story {
+    width: min(1050px, calc(100% - 40px));
+    margin: 20px auto 90px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* Main cards */
+.impact-page .impact-card {
+    position: relative;
+    padding: 34px;
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(34, 34, 34, 0.08);
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(34, 34, 34, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Make the third card span the width */
+.impact-page .impact-card:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+/* Cute offset effect */
+.impact-page .impact-card:nth-child(1) {
+    transform: rotate(-0.6deg);
+}
+
+.impact-page .impact-card:nth-child(2) {
+    transform: rotate(0.6deg);
+}
+
+.impact-page .impact-card:nth-child(3) {
+    transform: rotate(-0.25deg);
+}
+
+
+/* Hover */
+.impact-page .impact-card:hover {
+    transform: translateY(-6px) rotate(0deg);
+    box-shadow: 0 18px 45px rgba(34, 34, 34, 0.1);
+}
+
+/* Card Header */
+.impact-page .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.impact-page .impact-tag {
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 999px;
+    background: var(--sage);
+    color: #222;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+}
+
+.impact-page .impact-role {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+/* Different little tag colours */
+.impact-page .impact-card:nth-child(2) .impact-tag {
+    background: var(--rose);
+}
+
+.impact-page .impact-card:nth-child(3) .impact-tag {
+    background: var(--ice-blue);
+}
+
+/* Card Typography */
+.impact-page .impact-card h2 {
+    margin: 0 0 15px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3vw, 2.7rem);
+    font-weight: 600;
+    line-height: 1.05;
+}
+
+.impact-page .impact-card > p {
+    max-width: 720px;
+    margin: 0 0 25px;
+    font-family: 'Lora', serif;
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+/* Highlight Notes */
+.impact-page .impact-highlights {
+    display: grid;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.impact-page .highlight-item {
+    padding: 14px 16px;
+
+    background: rgba(203, 219, 197, 0.32);
+
+    border-left: 3px solid var(--sage);
+    border-radius: 0 10px 10px 0;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.impact-page .highlight-item strong {
+    font-weight: 600;
+}
+
+/* Skill and service tags */
+.impact-page .impact-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0 30px;
+}
+
+.impact-page .impact-tags-list span {
+    padding: 9px 14px;
+    background: rgba(232, 197, 200, 0.42);
+    border: 1px solid rgba(34, 34, 34, 0.06);
+    border-radius: 999px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+}
+
+/* Handwritten card ending */
+.impact-page .impact-card .handwritten {
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    font-family: 'Caveat', cursive;
+    font-size: 1.35rem;
+}
+
+/* Philosophy Note */
+.impact-page .impact-note {
+    width: min(850px, calc(100% - 40px));
+    margin: 0 auto 100px;
+    padding: 55px 50px;
+    background: var(--sage);
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(34, 34, 34, 0.07);
+    position: relative;
+}
+
+/* Little decorative corners */
+.impact-page .impact-note::before {
+    content: "✦";
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    font-size: 1.3rem;
+}
+
+.impact-page .impact-note::after {
+    content: "✦";
+    position: absolute;
+    bottom: 18px;
+    right: 25px;
+    font-size: 1.3rem;
+}
+
+.impact-page .note-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.impact-page .impact-note h2 {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+    font-weight: 600;
+}
+
+.impact-page .impact-note p {
+    max-width: 650px;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+    line-height: 1.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 760px) {
+
+    .impact-page .page-hero {
+        padding-top: 65px;
+        padding-bottom: 35px;
+    }
+
+    .impact-page .impact-story {
+        grid-template-columns: 1fr;
+        width: min(100% - 28px, 600px);
+        gap: 20px;
+    }
+
+    .impact-page .impact-card:nth-child(1),
+    .impact-page .impact-card:nth-child(2),
+    .impact-page .impact-card:nth-child(3) {
+        grid-column: auto;
+        transform: none;
+    }
+
+    .impact-page .impact-card {
+        padding: 26px 22px;
+    }
+
+    .impact-page .card-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .impact-page .impact-role {
+        font-size: 1.1rem;
+    }
+
+    .impact-page .impact-note {
+        width: min(100% - 28px, 600px);
+        padding: 42px 25px;
+        margin-bottom: 70px;
+    }
 }

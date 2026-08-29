@@ -702,70 +702,6 @@ img {
     max-width: 600px;
 }
 
-/* Full Bookshelf Grid */
-.bookshelf-full-grid {
-    padding: 20px 8% 90px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-    align-items: start;
-}
-
-.full-book-card {
-    padding: 30px 20px;
-    background-color: var(--background);
-    border: 1px solid var(--border);
-    text-align: center
-}
-
-.full-book-cover {
-    height: 330px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.full-book-cover img {
-    max-width: 190px;
-    max-height: 300px;
-    width: auto;
-    height: auto;
-    display: block;
-    box-shadow: 4px 8px 15px rgba(34, 34, 34, 0.18);
-    transition: transform 0.25s ease;
-}
-
-.full-book-card:hover .full-book-cover img {
-    transform: translateY(-7px) rotate(-1deg);
-}
-
-.full-book-info {
-    margin-top: 20px;
-    font-family: "Cormorant Garamond", serif;
-}
-
-.full-book-info-span {
-    font-family: "DM Sans", sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.12em;
-    color: var(--muted-text);
-}
-
-.full-book-info h2 {
-    margin: 12px 0 5px;
-    font-family: "Cormorant Garamond",  serif;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1;
-}
-
-.full-book-inspo p {
-    margin: 0;
-    font-family: "DM Sans", sans-serif;
-    font-size: 11px;
-    color: var(--muted-text);
-}
-
 /* Homepage Personal */
 .home-personal {
     position: relative;
@@ -1730,7 +1666,7 @@ img {
     background-color: var(--rose);
 }
 
-.bookshelf-page {
+.mybookshelf-page {
     background-color: var(--blue);
 }
 

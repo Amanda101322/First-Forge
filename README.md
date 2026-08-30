@@ -1,22 +1,76 @@
 # First-Forge
-Welcome to my cozy corner and digital garden, built with a cutesy, demure, and minimalist aesthetic.
-View Live: https:
+Welcome to First Forge- my cozy corner of the internet and a digital garden
+Live Site: https://first-forge.netlify.app/
+<img src="readme-1.png" alt="First Forge Home Page" width="600">
 
-I'm a graphic designer, student, and builder exploring the intersections of finance, literature, law and textiles through code. This space serves as a central hub showing my creations, my learning journey, and the things i love. I hope you enjoy going through it as I enjoyed coding and bringing it to life.
+First Forge is my personal website and digital archive.
+It's a space where I can bring together different parts of myself that don't always fit neatly into one category — coding, creative projects, writing, research, law, sewing, learning, and the things I'm simply curious about.
+Rather than being just a traditional portfolio, I wanted First Forge to feel like a living archive: something that can grow and change alongside me.
+
+I hope you enjoy exploring it as much as i enjoyed coding and bringing it to life.
 
 What's Inside:
-1. 5 of my near-future software builds(Amanda's Digital Notebook, Digital PiggyBank and Tracker, SweetTooth, PrepAndPave and Manda-Costura).
-2. A toolbox of resources (like freeCodeCamp, SideMe, and Youtube and Tiktok handles) which helped an absolute beginner like me kickstart her coding path. These resources can also help people who are just getting into coding.
-3. What I have in my library- books like The Concept of Law, The Code of capital with my top-tier werewolf fictions and others.
-4. Direct links to my socials and deep-dives on Substack and Medium.
-5. A dedicated signup card for my community framework,BGSA, inviting driven students to apply as founding executives.
+**Orchard**
+A collection of things I'm currently exploring and building, including: 
+-Coding
+-Creative projects
+-Law & legal studies
+-Sewing
+-Research
+-Online courses
 
-My Styling
-1. A mobile-first layout which is borderless and spacious.
-2. A calming background in my favourite color- sky blue with pastel highlights and navy blue typography
+**Writing**
+A space for thoughts, reflections, observations and things I've learned along the way.
 
-Tech Stack
-1. HTML5, CSS3 and JavaScript
-Hosted on Netlify
+**My Bookshelf**
+Books I'm reading, learning from, and keeping close-along with my thoughts and takeaways from them.
 
+**Impact**
+A record of the ways i try to contribute to my community throught the teaching, discussions, volunteering, leadership and creative service.
+
+**Personal**
+The less resume-friendly parts of me- hobbies, interests, current obsessions and little things that make me who I am.
+
+**Launchpad**
+A staging ground for projects, academic goals, research ideas and things I want to build in the future
+
+Built With
+-HTML 5
+- CSS3
+- JavaScript
+- Google Fonts
+
+Design
+First Forge was designed around a soft, minimal, editorial-inspired aesthetic cause that's how I wanted it.
+
+The visual language combines:
+-Soft sage
+-Dusty rose
+-Warm paper tones
+-Serif typography
+-Handwritten accents
+-Subtle cards and textures
+
+Features
+-Responsive layout
+-Multi-page navigation
+-Light/dark mode
+-Personal portfolio sections
+-Project and learning archive
+-Bookshelf
+-Writing section
+-Interactive elements
+-Custom visual styling
+
+To view First Forge locally on your machine: 
+1. **Clone the repository**: https://github.com/Amanda101322/First-Forge
+2. **Open the project folder** in your code editor or file manager.
+3. Launch the site: **Double-click or open 'index.html' in your browser
+You will not need any framework or build process.
+
+There might be changes in future as pages,projects, writing and experiments will continue to evolve as I learn and build more
+
+**Author**-Amanda
+Graphic designer, student and builder exploring the intersection of creativity, technology, finance, law, and everything in between.
 Built with care
+

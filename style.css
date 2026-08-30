@@ -693,7 +693,7 @@ img {
 
 /* Bookshelf page */
 .bookshelf-page {
-    background-color: var(--blue);
+    background-color: var(--rose);
 }
 
 /* Bookshelf Hero */
@@ -781,7 +781,7 @@ img {
     max-height: 285px;
     object-fit: contain;
     box-shadow: 4px 8px 15px rgba(34, 34, 34, 0.16);
-    transition: transform 0.25s ease box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .bookshelf-page .full-book-card:hover .full-book-cover img {
@@ -928,7 +928,7 @@ img {
 
 /* Closing Note */
 .bookshelf-page .page-closing-note {
-    padding: 20 8% 90px;
+    padding: 20px 8% 90px;
     margin: 0;
     font-family: "Caveat", cursive;
     font-size: 27px;
@@ -1272,7 +1272,7 @@ img {
 .launchpad-heading h2,
 .listening-heading h2 {
     font-family: "Cormorant Garamond", serif;
-    font-size: 2.25rem;;
+    font-size: 2.25rem;
    margin-bottom: 0.5rem;
 }
 
@@ -1953,7 +1953,7 @@ img {
 }
 
 .mybookshelf-page {
-    background-color: var(--blue);
+    background-color: var(--sage);
 }
 
 .impact-page {
@@ -1992,7 +1992,7 @@ img {
     }
 
     .subpage-grid {
-        grid-template-columns: repeat(auto-fill), minmax(260px, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         gap: 1.5rem;
         padding: 0 5% 60px;
     }
@@ -2105,21 +2105,16 @@ img {
     line-height: 1.75;
 }
 
-
 /* Personal Cards*/
-
 .personal-grid {
     position: relative;
     padding: 5px 8% 110px;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
-
 /* Individual card */
-
 .personal-card {
     position: relative;
     min-height: 310px;
@@ -2143,9 +2138,7 @@ img {
         box-shadow 0.25s ease;
 }
 
-
 /* Card colours */
-
 .personal-card:nth-child(odd) {
     background-color: var(--rose);
 }
@@ -2154,9 +2147,7 @@ img {
     background-color: var(--sage);
 }
 
-
 /* Tiny decorative corner */
-
 .personal-card::after {
     content: "✦";
     position: absolute;
@@ -2219,32 +2210,24 @@ img {
 
 
 /* Card Label */
-
 .card-meta {
     margin-bottom: 38px;
 }
 
 .category-tag {
     display: inline-block;
-
     padding: 6px 10px;
-
     border: 1px solid rgba(55, 55, 45, 0.12);
     border-radius: 20px;
-
     background-color: rgba(255, 255, 255, 0.28);
-
     font-family: "DM Sans", sans-serif;
     font-size: 9px;
     letter-spacing: 0.13em;
     text-transform: uppercase;
-
     color: var(--muted-text);
 }
 
-
 /* Card text*/
-
 .personal-card h2 {
     max-width: 450px;
 
@@ -2404,53 +2387,40 @@ img {
     line-height: 1.8;
 }
 
-
 /* Footer */
-
 .personal-page .site-footer {
     background-color: var(--blue);
 }
 
-
 /* Personal Mobile*/
-
 @media (max-width: 760px) {
-
     .personal-page .page-hero {
         padding: 65px 7% 55px;
     }
-
     .personal-page .page-hero h1 {
         font-size: clamp(62px, 18vw, 90px);
     }
-
     .personal-page .page-intro {
         margin-top: 25px;
         font-size: 16px;
         line-height: 1.7;
     }
-
     .personal-grid {
         grid-template-columns: 1fr;
         padding: 0 7% 75px;
         gap: 18px;
     }
-
     .personal-card {
         min-height: 275px;
         padding: 28px;
     }
-
     .personal-card h2 {
         font-size: 38px;
     }
-
     .card-meta {
         margin-bottom: 30px;
     }
-
     /* Remove rotations on small screens */
-
     .personal-card:nth-child(1),
     .personal-card:nth-child(2),
     .personal-card:nth-child(3),
@@ -2459,7 +2429,6 @@ img {
     .personal-card:nth-child(6) {
         transform: none;
     }
-
     .personal-card:nth-child(1):hover,
     .personal-card:nth-child(2):hover,
     .personal-card:nth-child(3):hover,
@@ -2468,17 +2437,14 @@ img {
     .personal-card:nth-child(6):hover {
         transform: translateY(-4px);
     }
-
     .personal-notes {
         margin: 0 7% 75px;
         padding: 45px 28px 40px;
     }
-
     .personal-notes h2 {
         font-size: 42px;
         line-height: 1;
     }
-
     .personal-notes::after {
         right: 20px;
         top: 20px;
@@ -2486,13 +2452,11 @@ img {
 }
 
 /* Writing Page*/
-
 .writing-page {
-    background-color: var(--background);
+    background-color: var(--blue);
 }
 
 /* Writing Hero */
-
 .writing-page .page-hero {
     position: relative;
     padding: 90px 8% 60px;
@@ -2581,7 +2545,6 @@ img {
 }
 
 /* Article Thumbnails*/
-
 .article-thumbnail {
     width: 100%;
     height: 210px;
@@ -2740,7 +2703,7 @@ img {
 
 /* Orchard Page*/
 .orchard-page {
-    background-color: var(--background);
+    background-color: var(--sage);
 }
 
 /* Orchard Hero*/
@@ -3195,7 +3158,7 @@ img {
 
 /* Impact Page */
 .impact-page {
-    background: var(--background);
+    background: var(--rose);
 }
 
 /* Impact Hero */
@@ -3307,7 +3270,7 @@ img {
 }
 
 .impact-page .impact-card:nth-child(3) .impact-tag {
-    background: var(--ice-blue);
+    background: var(--blue);
 }
 
 /* Card Typography */
@@ -3434,7 +3397,6 @@ img {
 
 /* Mobile Responsiveness */
 @media (max-width: 760px) {
-
     .impact-page .page-hero {
         padding-top: 65px;
         padding-bottom: 35px;

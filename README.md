@@ -61,6 +61,8 @@ Features
 -Writing section
 -Interactive elements
 -Custom visual styling
+<img src="readme-2.png" alt="First Forge Footer and Music Widget" width="600">
+
 
 To view First Forge locally on your machine: 
 1. **Clone the repository**: https://github.com/Amanda101322/First-Forge

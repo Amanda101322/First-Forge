@@ -38,6 +38,7 @@ First Forge was designed around a soft, minimal, editorial-inspired aesthetic be
 - Responsive layout
 - Multi-page navigation
 - Light/dark mode toggle
+- An embedded Spotify player
 - Custom visual styling & personal archives
 
 <p align="center">

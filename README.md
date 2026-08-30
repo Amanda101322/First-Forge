@@ -55,6 +55,8 @@ Features
 -Responsive layout
 -Multi-page navigation
 -Light/dark mode
+-Custom visual styling
+<img src="readme-3.png" alt="First Forge hero dark mode" width="600">
 -Personal portfolio sections
 -Project and learning archive
 -Bookshelf
@@ -62,7 +64,6 @@ Features
 -Interactive elements
 -Custom visual styling
 <img src="readme-2.png" alt="First Forge Footer and Music Widget" width="600">
-
 
 To view First Forge locally on your machine: 
 1. **Clone the repository**: https://github.com/Amanda101322/First-Forge

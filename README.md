@@ -14,10 +14,13 @@ I hope you enjoy exploring it as much as I enjoyed coding and bringing it to lif
 
 - **Orchard** - A collection of things I'm currently exploring and building (Coding, Creative projects, Law & legal studies, Sewing, Research, Online courses).
 - **Writing** - A space for thoughts, reflections, observations and things I've learned along the way.
-- **My Bookshelf** - Books I'm reading, learning from, and keeping close along with my thoughts and takeaways from them.
 - **Impact** - A record of the ways i try to contribute to my community through teaching, discussions, volunteering, leadership and creative service.
 - **Personal** - The less resume-friendly parts of me- hobbies, interests, current obsessions and little things that make me who I am.
-- **Launchpad** - A staging ground for projects, academic goals, research ideas and things I want to build in the future
+- **Launchpad** - A staging ground for projects, academic goals, research ideas and things I want to build in the future.
+- **My Bookshelf** - Books I'm reading, learning from, and keeping close along with my thoughts and takeaways from them.
+<p align="center">
+<img src="readme-4.png" alt="First Forge Home Page" width="600">
+</p>
 
 ## Design & Aesthetic
 

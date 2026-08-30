@@ -22,7 +22,9 @@ I hope you enjoy exploring it as much as I enjoyed coding and bringing it to lif
 ## Design & Aesthetic
 
 First Forge was designed around a soft, minimal, editorial-inspired aesthetic because that's how I wanted it.
+
 **Visual Language:**
+
 - Soft sage & Dusty rose palette
 - Warm paper tones
 - Serif typography
